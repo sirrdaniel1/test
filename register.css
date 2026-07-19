@@ -167,3 +167,96 @@ footer {
 .footer-section p {
     margin: 0.5rem 0;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.8rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        grid-column: auto;
+    }
+
+    .header-icons {
+        grid-column: auto;
+        justify-content: center;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        margin: 1rem auto 2rem;
+        padding: 1.25rem;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+
+    .names input {
+        max-width: none;
+    }
+
+    .radio-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 1rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.9rem;
+    }
+
+    .logo img {
+        height: 44px;
+    }
+
+    .header-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .container {
+        width: calc(100% - 1.5rem);
+        padding: 1rem;
+    }
+
+    .form-box button,
+    .form-box input {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 1rem 1.25rem;
+        margin-top: 2rem;
+    }
+}
